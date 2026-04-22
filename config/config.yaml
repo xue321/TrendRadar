@@ -94,42 +94,37 @@ rss:
     # 路透社 - 通过 Google News 聚合
     - url: "https://news.google.com/rss/search?q=Reuters+markets+stocks&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
       name: "路透社-市场"
-      freshness_days: 1
+      freshness_days: 3
 
     # 彭博社 - 通过 Google News 聚合
     - url: "https://news.google.com/rss/search?q=Bloomberg+markets+stocks&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
       name: "彭博社-市场"
-      freshness_days: 1
+      freshness_days: 3
 
     # 高盛 - 通过 Google News 聚合
     - url: "https://news.google.com/rss/search?q=Goldman+Sachs&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
       name: "高盛动态"
-      freshness_days: 1
+      freshness_days: 3
 
     # Google 财经新闻（中文）
     - url: "https://news.google.com/rss/topics/CAAqJggKIiBDQkFTRWdvSUwyMHZNRGx6TVdZU0FtemhDTlFKRFRpZ0FQAQ?hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
       name: "Google财经新闻"
-      freshness_days: 1
+      freshness_days: 3
 
     # 华尔街日报中文版
     - url: "https://cn.wsj.com/zh-hans/rss"
       name: "华尔街日报中文"
-      freshness_days: 1
+      freshness_days: 3
 
     # 东方财富股票资讯
     - url: "https://news.google.com/rss/search?q=site:eastmoney.com+股票&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
       name: "东方财富"
-      freshness_days: 1
+      freshness_days: 3
 
     # 雪球热门讨论
     - url: "https://news.google.com/rss/search?q=site:xueqiu.com&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
       name: "雪球"
-      freshness_days: 1
-      
-    # 虎扑股票区  
-    - url: "https://bbs.hupu.com/stock"
-      name: "虎扑股票区"
-      freshness_days: 1
+      freshness_days: 3
 
 
   # 文章新鲜度过滤配置（全局默认值）
@@ -145,7 +140,7 @@ rss:
   freshness_filter:
     enabled: true                     # 是否启用新鲜度过滤（默认启用）
 
-    max_age_days: 1                   # 最大文章年龄（天）
+    max_age_days: 3                   # 最大文章年龄（天）
                                       # - 正整数：只推送 N 天内的文章
                                       # - 0：禁用过滤，推送所有文章
 
